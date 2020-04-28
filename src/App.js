@@ -21,7 +21,7 @@ export default class App extends Component {
 
         <main>
           <section className="hornOptions">
-            <select className="cat-type-filter" onChange={this.handleChange}>
+            <select className="cat-type-filter" onChange={this.hornChange}>
               <option value="" defaultValue>
                 All Types
               </option>
@@ -42,12 +42,13 @@ export default class App extends Component {
             <ul className="horns">
               {
                 hornData
-                  .filter(keyword => {
+                  .filter(horn => {
                     if (!this.state.selected) return true;
-                    return keyword.keyword === this.state.selected;
+
+                    return horn.keyword === this.state.selected;
                   })
-                  .map(image => {
-                    return <Horn image={image} />
+                  .map(horn => {
+                    return <Horn horn={horn} />
                   })
               }
 
