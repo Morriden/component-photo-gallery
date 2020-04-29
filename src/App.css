@@ -46,13 +46,16 @@ header {
   justify-content: center;
 }
 
-.hornOptions {
+.allheaders {
   display: flex;
+  align-items: center;
+  flex-direction: row;
   justify-content: center;
 }
 
-.horn-filter {
+.horn-filter, .numOfHorns-filter, .nameofanimal-filter {
   color: rgb(8, 95, 8);
   font-size: 25px;
   font-weight: bold;
+  background: rgb(232, 241, 248);
 }
