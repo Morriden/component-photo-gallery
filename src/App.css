@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+body {
+  background: goldenrod;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+  padding: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  width: 350px;
+  height: 350px;
+  border: solid 4px black;
+  border-radius: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h3 {
+  text-decoration: underline;
+}
+
+.horns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.horns li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 400px;
+  height: 550px;
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 5px;
+  background-color: rgb(51, 141, 51);
+}
+
+p {
+  font-weight: bold;
+}
+
+header {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.allheaders {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.horn-filter, .numOfHorns-filter, .nameofanimal-filter {
+  color: rgb(8, 95, 8);
+  font-size: 25px;
+  font-weight: bold;
+  background: rgb(232, 241, 248);
 }
